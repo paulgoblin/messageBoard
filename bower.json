@@ -1,0 +1,23 @@
+{
+  "name": "10mongoose",
+  "description": "",
+  "main": "app.js",
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "font-awesome": "~4.4.0",
+    "moment": "~2.10.6",
+    "js-md5": "md5#~0.3.0",
+    "sweetalert": "~1.1.3"
+  }
+}

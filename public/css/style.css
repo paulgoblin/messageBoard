@@ -1,0 +1,53 @@
+.row {
+  padding:1em;
+}
+
+#sample {
+  display: none;
+}
+
+.editForm{
+  display: none;
+}
+
+._id {
+  display: none;
+}
+
+i {
+  float: right;
+  padding: 0 0.5em;
+}
+
+.message > div {
+  min-height: 20px;
+  padding:1em;
+
+}
+
+.post {
+  border-bottom: 1px solid #ddd 
+}
+
+#postForm, .message{
+  min-height: 50px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin:1em 0;
+}
+
+textarea {
+  width:100%;
+}
+
+label, input, textarea, button {
+  margin:1em;
+}
+
+button {
+  margin-top:0;
+}
+
+h1 {
+  margin-bottom: 2em;
+}

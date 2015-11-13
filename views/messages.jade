@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    title= title
+    link(href="bower_components/bootstrap/dist/css/bootstrap.min.css", rel='stylesheet')
+    link(href="bower_components/font-awesome/css/font-awesome.min.css", rel='stylesheet')
+    link(href="bower_components/sweetalert/dist/sweetalert.css", rel='stylesheet')
+    link(href="css/style.css", rel='stylesheet')
+  body
+    .container
+      .row
+        .col-xs-12
+          h1= title
+      .row.board
+        each message in messages
+          .col-xs-12.message
+            .col-xs-12.post= message.post
+            .col-xs-3.name= message.author
+            .col-xs-7.date= message.time
+            .col-xs-2.buttons
+              i.fa.fa-trash-o.fa-lg.delete
+              i.fa.fa-pencil-square-o.fa-lg.edit
+            .col-xs-12.editForm
+              ._id= message._id
+              .form-inline
+                .form-group
+                  label(for='author') Name
+                  input.author.form-control(type='text', placeholder='Jane Doe')
+                .form-group
+                  label(for='key') Keyword
+                  input.key.form-control(type='text', placeholder='secret keyword')
+                  button.btn.btn-default.putMessage(type='button') Save Edit
+              .form-group.messageBody.col-xs-12
+                textarea.form-control(rows='3')
+
+        .col-xs-12.message#sample
+          .col-xs-12.post
+          .col-xs-3.name
+          .col-xs-7.date
+          ._id
+          .col-xs-2.buttons
+            i.fa.fa-trash-o.fa-lg.delete
+            i.fa.fa-pencil-square-o.fa-lg.edit
+          .col-xs-12.editForm
+            .form-inline
+              .form-group
+                label(for='author') Name
+                input.author.form-control(type='text', placeholder='Jane Doe')
+              .form-group
+                label(for='key') Keyword
+                input.key.form-control(type='text', placeholder='secret keyword')
+                button.btn.btn-default.putMessage(type='button') Save Edit
+            .form-group.messageBody.col-xs-12
+              textarea.form-control(rows='3')
+
+      .row
+        .col-xs-12#postForm
+          .form-inline
+            .form-group
+              label(for='author') Name
+              input.author.form-control(type='text', placeholder='Jane Doe', value="Paul")
+            .form-group
+              label(for='key') Keyword
+              input.key.form-control(type='text', placeholder='secret keyword', value="secretword")
+              button.btn.btn-default.postMessage(type='button') Post Message
+          .form-group.messageBody.col-xs-12
+            textarea.form-control(rows='3', value="Test message")
+
+
+
+    script(src='bower_components/jquery/dist/jquery.min.js')
+    script(src="bower_components/js-md5/build/md5.min.js")
+    script(src="bower_components/moment/min/moment.min.js")
+    script(src="bower_components/bootstrap/dist/js/bootstrap.min.js")
+    script(src="bower_components/sweetalert/dist/sweetalert.min.js")
+    script(src='js/main.js')
+
+
+
+
+
+
