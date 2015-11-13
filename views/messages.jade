@@ -27,7 +27,7 @@ html(lang="en")
                   label(for='author') Name
                   input.author.form-control(type='text', placeholder='Jane Doe')
                 .form-group
-                  label(for='key') Keyword
+                  label.keylabel(for='key') Keyword
                   input.key.form-control(type='text', placeholder='secret keyword')
                   button.btn.btn-default.putMessage(type='button') Save Edit
               .form-group.messageBody.col-xs-12
@@ -47,8 +47,8 @@ html(lang="en")
                 label(for='author') Name
                 input.author.form-control(type='text', placeholder='Jane Doe')
               .form-group
-                label(for='key') Keyword
-                input.key.form-control(type='text', placeholder='secret keyword')
+                label.keylabel(for='key') Keyword
+                input.key(type='text', placeholder='secret keyword')
                 button.btn.btn-default.putMessage(type='button') Save Edit
             .form-group.messageBody.col-xs-12
               textarea.form-control(rows='3')
@@ -60,8 +60,8 @@ html(lang="en")
               label(for='author') Name
               input.author.form-control(type='text', placeholder='Jane Doe', value="Paul")
             .form-group
-              label(for='key') Keyword
-              input.key.form-control(type='text', placeholder='secret keyword', value="secretword")
+              label.keylabel(for='key') Keyword
+              input.key(type='text', placeholder='secret keyword', value="secretword")
               button.btn.btn-default.postMessage(type='button') Post Message
           .form-group.messageBody.col-xs-12
             textarea.form-control(rows='3', value="Test message")

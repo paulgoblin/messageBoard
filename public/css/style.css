@@ -20,7 +20,6 @@ i {
 }
 
 .message > div {
-  min-height: 20px;
   padding:1em;
 
 }
@@ -49,5 +48,16 @@ button {
 }
 
 h1 {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
+
+.keylabel {
+  display: none;
+}
+.key {
+  display: none;
+}
+
+
+
+
