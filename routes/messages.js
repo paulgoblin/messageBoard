@@ -27,7 +27,6 @@ router.post('/update', function(req,res){
 })
 
 router.post('/delete', function(req,res){
-  console.log('got message: ', req.body._id)
   Message.remove({_id: req.body._id}, function(err){
     if(err) return res.status(400).send('error deleting message',err);
     res.send('message deleted');

@@ -114,7 +114,6 @@ function makeMessage($form){
   message.post = $form.find('textarea').val();
   message.time = moment().format('dddd, MMM Do YYYY, h:mm a');
   console.log("moment: ",message.time)
-  // message.time = Date.now();
   clearForm($form);
   return message;
 }
