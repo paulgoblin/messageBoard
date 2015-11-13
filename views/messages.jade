@@ -5,6 +5,7 @@ html(lang="en")
     link(href="bower_components/bootstrap/dist/css/bootstrap.min.css", rel='stylesheet')
     link(href="bower_components/font-awesome/css/font-awesome.min.css", rel='stylesheet')
     link(href="bower_components/sweetalert/dist/sweetalert.css", rel='stylesheet')
+    link(href="bower_components/bootswatch/darkly/bootstrap.min.css", rel='stylesheet')
     link(href="css/style.css", rel='stylesheet')
   body
     .container
@@ -58,13 +59,13 @@ html(lang="en")
           .form-inline
             .form-group
               label(for='author') Name
-              input.author.form-control(type='text', placeholder='Jane Doe', value="Paul")
+              input.author.form-control(type='text', placeholder='Jane Doe')
             .form-group
               label.keylabel(for='key') Keyword
               input.key(type='text', placeholder='secret keyword', value="secretword")
               button.btn.btn-default.postMessage(type='button') Post Message
           .form-group.messageBody.col-xs-12
-            textarea.form-control(rows='3', value="Test message")
+            textarea.form-control(rows='3')
 
 
 
