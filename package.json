@@ -1,9 +1,8 @@
 {
-  "name": "10mongoose",
+  "name": "10message",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "scripts": {
   "scripts": {
     "start": "node app.js",
     "postinstall": "bower i",
@@ -18,5 +17,6 @@
     "jade": "^1.11.0",
     "mongoose": "^4.2.5",
     "morgan": "^1.6.1"
-  }
+  },
+  "engines" : { "node" : "5.0.0" }
 }
