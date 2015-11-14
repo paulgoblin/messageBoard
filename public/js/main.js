@@ -12,7 +12,7 @@ function deleteMessage(e){
   let message = {};
   message._id = _id;
 
-  $.post('/delete', message)
+  $.post('/messages/delete', message)
   .done(function(data){
     $(e.target).closest('.message').remove();
   })
@@ -35,7 +35,7 @@ function putMessage(e){
   console.log(message)
 
   //put to DB
-  $.post('/update', message)
+  $.post('/messages/update', message)
   .done(function(data){
     console.log(data)
     let $postElems = makePostElems(message);
@@ -74,7 +74,7 @@ function postMessage(e){
   let message = makeMessage($form);
 
   //post to db
-  $.post('/', message)
+  $.post('/messages', message)
   .done(function(data){
     console.log(data)
     let $postElems = makePostElems(data);

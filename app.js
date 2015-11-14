@@ -7,7 +7,7 @@ var morgan = require('morgan');
 var bodyParser = require('body-parser');
 
 var mongoose = require('mongoose');
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/messageapp')
+mongoose.connect(process.env.MONGOLAB_URL || 'mongodb://localhost/messageapp')
 
 var app = express();
 app.set('view engine','jade');
@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded( {extended: true} ));
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
-app.use('/',require('./routes/messages'))
+app.use('/',require('./routes/index'))
 app.use('/messages',require('./routes/messages'))
 
 app.listen(PORT, function(){
